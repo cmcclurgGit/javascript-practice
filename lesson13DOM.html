@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+	<head>
+		<title>Something</title>
+	</head>
+	<body>
+		<p> This is some text.</p>
+		<p>Thisis more text.</p>
+		<p>Here is text with a <span id="foo">span element</span></p>
+			<script type="text/javascript">
+				var theSpan = document.getElementById("foo");
+				//var theSpan = document.getElementByTagName("span")[0];
+				theSpan.childNodes[0].nodeValue = "span element containing new text";
+			</script>
+	</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Lesson 14 Example</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var shoppingList = [
+			"Eggs",
+			"Milk",
+			"Juice",
+			"Diapers",
+			"Bread"
+		];
+
+		var ul = document.createElement("ul");
+		// styling ul.setAttribute("type","square");
+
+		for (var i=0; i<shoppingList.length; i++){
+			ul.innerHTML += "<li>" + shoppingList[i] + "</li>";		
+				}
+
+		document.body.appendChild(ul);
+
+	</script>
+</body>
+</html>
